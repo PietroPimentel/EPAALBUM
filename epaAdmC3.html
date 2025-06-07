@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Álbum de Fotos</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(-45deg, #2193b0, #6dd5ed, #2980b9, #6dd5ed);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    .carousel {
+      position: relative;
+      width: 90%;
+      max-width: 900px;
+      height: 600px;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+      background: white;
+    }
+    .slides {
+      display: flex;
+      width: calc(100% * 11); /* 11 imagens */
+      height: 100%;
+      animation: slide 55s infinite ease-in-out;
+    }
+    .slides img {
+      width: calc(100% / 11);
+      height: 100%;
+      object-fit: contain;
+      flex-shrink: 0;
+      border-radius: 20px;
+      padding: 10px;
+      background: #fff;
+    }
+    @keyframes slide {
+      0%, 9% { transform: translateX(0%); }
+      10%, 18% { transform: translateX(-9.09%); }
+      19%, 27% { transform: translateX(-18.18%); }
+      28%, 36% { transform: translateX(-27.27%); }
+      37%, 45% { transform: translateX(-36.36%); }
+      46%, 54% { transform: translateX(-45.45%); }
+      55%, 63% { transform: translateX(-54.54%); }
+      64%, 72% { transform: translateX(-63.63%); }
+      73%, 81% { transform: translateX(-72.72%); }
+      82%, 90% { transform: translateX(-81.81%); }
+      91%, 100% { transform: translateX(-90.9%); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="carousel">
+    <div class="slides">
+      <img src="https://drive.google.com/thumbnail?id=1s4gyTZb_WJraYWdNPqUV_ndlsDCiBU82" alt="Foto 1" />
+      <img src="https://drive.google.com/thumbnail?id=1_aCCXN5AMftpqv5HavLlkkpaZRrpDN39" alt="Foto 2" />
+      <img src="https://drive.google.com/thumbnail?id=1TyUq4QerJj-Fys21BtUFPlQh8Uct6crM" alt="Foto 3" />
+      <img src="https://drive.google.com/thumbnail?id=1FkoyavXDVqBMzifYRD_fYceTrb06ypZN" alt="Foto 4" />
+      <img src="https://drive.google.com/thumbnail?id=1haDt9B5NsxC2FTOHSIta6Qpp46MUEw6j" alt="Foto 5" />
+      <img src="https://drive.google.com/thumbnail?id=1YIQ3NJJfVppSMw1WlOqVrhbFcv3o5-xH" alt="Foto 6" />
+      <img src="https://drive.google.com/thumbnail?id=11Uejd_PZ0oI8yfDgk92toN2yzr5cgn2T" alt="Foto 7" />
+      <img src="https://drive.google.com/thumbnail?id=19ncnMH-FX3DHBPaVNxcujC4D6E3Q2NgX" alt="Foto 8" />
+      <img src="https://drive.google.com/thumbnail?id=1Sn4DB93A4odQOiKb8oFNF59cBZLdvf5v" alt="Foto 9" />
+      <img src="https://drive.google.com/thumbnail?id=1i3ngoqT2uoUXnUlGRR0WmBj_91oMtIRE" alt="Foto 10" />
+      <img src="https://drive.google.com/thumbnail?id=1rAWdTA-g5p713Uh3_kXFz_Ej-ZO8OTXy" alt="Foto 11" />
+    </div>
+  </div>
+
+</body>
+</html>
